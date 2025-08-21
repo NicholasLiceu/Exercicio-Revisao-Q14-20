@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício – HTML, CSS e Multimídia</title>
+  <link rel="icon" href="https://fav.farm/🔥">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header>
+    <h1>Site-Exercício: HTML + CSS + Multimídia</h1>
+    <p class="shorthand">Desafio: reproduza este site do zero.</p>
+  </header>
+
+  <nav>
+    <a href="#texto">Texto</a>
+    <a href="#listas">Listas</a>
+    <a href="#links-imagens">Links & Imagens</a>
+    <a href="#midia">Áudio/Vídeo</a>
+    <a href="#css">CSS</a>
+    <a href="#cores">Cores</a>
+    <a href="#entidades">Entidades</a>
+  </nav>
+
+  <main class="container">
+
+    <section id="texto" class="card">
+      <h2>&lt;h1&gt;…&lt;h6&gt;, &lt;p&gt;, &lt;hr&gt;, &lt;strong&gt;, &lt;em&gt;, &lt;sup&gt;, &lt;sub&gt;</h2>
+      <p id="paragrafoPrincipal" class="indentado">
+        Este é o <strong>parágrafo principal</strong> com <em>ênfase</em>, além de sobrescrito (2<sup>2</sup>=4) e subscrito (H<sub>2</sub>O).
+      </p>
+      <p>A hierarquia de títulos vai de <strong>h1</strong> até <strong>h6</strong>. Abaixo, uma linha horizontal.</p>
+      <hr>
+      <h3 class="destaque">Título h3 em destaque</h3>
+      <p class="nota">Dica: ative o Auto Save (after delay) e use o Live Server para ver as mudanças ao vivo.</p>
+    </section>
+
+    <section id="listas" class="card">
+      <h2>&lt;ol&gt;, &lt;ul&gt;, &lt;li&gt; e Listas Aninhadas</h2>
+      <p>Lista ordenada com algarismos romanos minúsculos:</p>
+      <ol type="i">
+        <li>Item um</li>
+        <li>Item dois
+          <ul type="square">
+            <li>Subitem com marcador quadrado</li>
+            <li>Outro subitem</li>
+          </ul>
+        </li>
+        <li>Item três</li>
+      </ol>
+
+      <p>Lista não ordenada:</p>
+      <ul>
+        <li>Marcador padrão</li>
+        <li>Mais um item</li>
+      </ul>
+
+      <h3>Lista de Definições (DL)</h3>
+      <dl>
+        <dt>&lt;dl&gt;</dt> <dd>Definition List – lista de definições.</dd>
+        <dt>&lt;dt&gt;</dt> <dd>Definition Term – termo a ser definido.</dd>
+        <dt>&lt;dd&gt;</dt> <dd>Definition Description – a descrição do termo.</dd>
+      </dl>
+      <p class="nota">Dica: mecanismos de busca podem usar DL para encontrar definições.</p>
+    </section>
+
+    <section id="links-imagens" class="card media">
+      <h2>Links (&lt;a&gt;) e Imagens (&lt;img&gt;)</h2>
+
+      <p>
+        <a href="https://www.apple.com" rel="external" target="_blank">Link externo</a>
+        • <a href="#midia" rel="next">Próxima seção</a>
+        • <a href="#texto" rel="prev">Seção anterior</a>
+      </p>
+
+      <p>
+        <a href="https://www.mozilla.org" target="_blank" rel="external">
+          <img src="https://picsum.photos/id/1025/600/350" alt="Imagem externa de exemplo">
+        </a>
+      </p>
+
+      <h3>Imagens Dinâmicas com &lt;picture&gt;</h3>
+      <picture>
+        <source media="(max-width: 750px)" srcset="https://picsum.photos/id/1015/600/400">
+        <source media="(max-width: 1050px)" srcset="https://picsum.photos/id/1015/900/500">
+        <img src="https://picsum.photos/id/1015/1200/600" alt="Foto responsiva">
+      </picture>
+
+      <p class="nota">Dica: no VS Code, use CTRL+Espaço para completar caminhos de arquivos.</p>
+    </section>
+
+    <section id="midia" class="card media">
+      <h2>Áudio (&lt;audio&gt;) e Vídeo (&lt;video&gt;)</h2>
+
+      <h3>Exemplo de Áudio</h3>
+      <audio controls>
+        <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+        <source src="https://www.w3schools.com/html/horse.ogg" type="audio/ogg">
+        <p>Seu navegador não suporta áudio.</p>
+      </audio>
+
+      <h3>Exemplo de Vídeo</h3>
+      <video controls width="480">
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        <source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
+        <source src="https://www.w3schools.com/html/mov_bbb.webm" type="video/webm">
+        <p>Seu navegador não suporta vídeo.</p>
+      </video>
+
+      <h3>Vídeo Externo (YouTube)</h3>
+      <iframe width="560" height="315"
+              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen></iframe>
+      <p class="nota">Dica: YouTube → Compartilhar → Incorporar → cole o iframe.</p>
+    </section>
+
+    <section id="css" class="card">
+      <h2>CSS Externo</h2>
+      <p class="indentado">
+        Esta página usa apenas CSS externo via <code>&lt;link rel="stylesheet"&gt;</code>. Replique as classes, seletores de tag e id.
+      </p>
+      <div class="fundo-amarelo">
+        <h3>Exemplo com background-color e padding</h3>
+        <p>Bloco com fundo, espaçamento e contraste.</p>
+      </div>
+      <p>
+        <strong class="destaque">Propriedades usadas:</strong> color, font-family, font-size (px e em), font-style, font-weight,
+        text-align, text-decoration.
+      </p>
+      <button class="btn">Passe o mouse (hover)</button>
+    </section>
+
+    <section id="cores" class="card">
+      <h2>Cores e Harmonia</h2>
+      <p>
+        Use ferramentas como
+        <a href="https://coolors.co" target="_blank" rel="external">Coolors</a> e
+        <a href="https://color.adobe.com/pt/create/color-wheel" target="_blank" rel="external">Adobe Color</a>.
+      </p>
+      <div class="paleta-suave">
+        <h3>Paleta Suave</h3>
+        <p>Combinação legível: fundo claro e texto escuro.</p>
+      </div>
+    </section>
+
+    <section id="entidades" class="card">
+      <h2>Entidades HTML e Símbolos</h2>
+      <p>Menor e maior: <code>&amp;lt;</code> = &lt; e <code>&amp;gt;</code> = &gt;</p>
+      <p>Símbolos: &amp;reg; = &reg; • &amp;copy; = &copy; • &amp;euro; = &euro;</p>
+      <p class="nota">
+        Referências:
+        <a href="https://www.homehost.com.br/blog/tutoriais/caracteres-especiais-acentos-html/" target="_blank" rel="external">Caracteres especiais</a> •
+        <a href="https://www.w3schools.com/html/html_emojis.asp" target="_blank" rel="external">Emojis em HTML</a>
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Navegação entre “páginas”</h2>
+      <p>
+        <a href="#texto" rel="prev">◀ Página Anterior</a> |
+        <a href="#midia" rel="next">Próxima Página ▶</a>
+      </p>
+    </section>
+
+  </main>
+
+  <footer class="container" style="text-align:center; padding-bottom:24px;">
+    <p class="nota">Use CTRL+Shift+P para abrir a paleta de comandos do VS Code.</p>
+    <p>&copy; 2025 – Exercício didático.</p>
+  </footer>
+</body>
+</html>

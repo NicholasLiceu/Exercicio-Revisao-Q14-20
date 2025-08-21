@@ -25,7 +25,7 @@
 
   <main class="container">
 
-    <section id="texto" class="card">
+    <section id="texto" class="secao">
       <h2>&lt;h1&gt;…&lt;h6&gt;, &lt;p&gt;, &lt;hr&gt;, &lt;strong&gt;, &lt;em&gt;, &lt;sup&gt;, &lt;sub&gt;</h2>
       <p id="paragrafoPrincipal" class="indentado">
         Este é o <strong>parágrafo principal</strong> com <em>ênfase</em>, além de sobrescrito (2<sup>2</sup>=4) e subscrito (H<sub>2</sub>O).
@@ -36,7 +36,7 @@
       <p class="nota">Dica: ative o Auto Save (after delay) e use o Live Server para ver as mudanças ao vivo.</p>
     </section>
 
-    <section id="listas" class="card">
+    <section id="listas" class="secao">
       <h2>&lt;ol&gt;, &lt;ul&gt;, &lt;li&gt; e Listas Aninhadas</h2>
       <p>Lista ordenada com algarismos romanos minúsculos:</p>
       <ol type="i">
@@ -65,13 +65,13 @@
       <p class="nota">Dica: mecanismos de busca podem usar DL para encontrar definições.</p>
     </section>
 
-    <section id="links-imagens" class="card media">
+    <section id="links-imagens" class="secao">
       <h2>Links (&lt;a&gt;) e Imagens (&lt;img&gt;)</h2>
 
       <p>
-        <a href="https://www.apple.com" rel="external" target="_blank">Link externo</a>
-        • <a href="#midia" rel="next">Próxima seção</a>
-        • <a href="#texto" rel="prev">Seção anterior</a>
+        <a href="https://www.apple.com" rel="external" target="_blank">Link externo</a> •
+        <a href="#midia" rel="next">Próxima seção</a> •
+        <a href="#texto" rel="prev">Seção anterior</a>
       </p>
 
       <p>
@@ -90,7 +90,7 @@
       <p class="nota">Dica: no VS Code, use CTRL+Espaço para completar caminhos de arquivos.</p>
     </section>
 
-    <section id="midia" class="card media">
+    <section id="midia" class="secao">
       <h2>Áudio (&lt;audio&gt;) e Vídeo (&lt;video&gt;)</h2>
 
       <h3>Exemplo de Áudio</h3>
@@ -114,15 +114,14 @@
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
               allowfullscreen></iframe>
       <p class="nota">Dica: YouTube → Compartilhar → Incorporar → cole o iframe.</p>
     </section>
 
-    <section id="css" class="card">
+    <section id="css" class="secao">
       <h2>CSS Externo</h2>
       <p class="indentado">
-        Esta página usa apenas CSS externo via <code>&lt;link rel="stylesheet"&gt;</code>. Replique as classes, seletores de tag e id.
+        Esta página usa apenas CSS externo via &lt;link rel="stylesheet"&gt;. Replique classes, seletores de tag e id.
       </p>
       <div class="fundo-amarelo">
         <h3>Exemplo com background-color e padding</h3>
@@ -132,25 +131,25 @@
         <strong class="destaque">Propriedades usadas:</strong> color, font-family, font-size (px e em), font-style, font-weight,
         text-align, text-decoration.
       </p>
-      <button class="btn">Passe o mouse (hover)</button>
+      <a href="#" class="btn">Passe o mouse (hover)</a>
     </section>
 
-    <section id="cores" class="card">
+    <section id="cores" class="secao">
       <h2>Cores e Harmonia</h2>
       <p>
         Use ferramentas como
         <a href="https://coolors.co" target="_blank" rel="external">Coolors</a> e
         <a href="https://color.adobe.com/pt/create/color-wheel" target="_blank" rel="external">Adobe Color</a>.
       </p>
-      <div class="paleta-suave">
+      <div class="fundo-amarelo">
         <h3>Paleta Suave</h3>
         <p>Combinação legível: fundo claro e texto escuro.</p>
       </div>
     </section>
 
-    <section id="entidades" class="card">
+    <section id="entidades" class="secao">
       <h2>Entidades HTML e Símbolos</h2>
-      <p>Menor e maior: <code>&amp;lt;</code> = &lt; e <code>&amp;gt;</code> = &gt;</p>
+      <p>Menor e maior: &amp;lt; = &lt; e &amp;gt; = &gt;</p>
       <p>Símbolos: &amp;reg; = &reg; • &amp;copy; = &copy; • &amp;euro; = &euro;</p>
       <p class="nota">
         Referências:
@@ -159,7 +158,7 @@
       </p>
     </section>
 
-    <section class="card">
+    <section class="secao">
       <h2>Navegação entre “páginas”</h2>
       <p>
         <a href="#texto" rel="prev">◀ Página Anterior</a> |
@@ -169,7 +168,7 @@
 
   </main>
 
-  <footer class="container" style="text-align:center; padding-bottom:24px;">
+  <footer class="container">
     <p class="nota">Use CTRL+Shift+P para abrir a paleta de comandos do VS Code.</p>
     <p>&copy; 2025 – Exercício didático.</p>
   </footer>
